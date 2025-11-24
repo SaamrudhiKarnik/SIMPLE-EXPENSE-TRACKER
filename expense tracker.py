@@ -130,27 +130,28 @@ def main():
     
     while True:
         print("\nChoose an option:")
-        print("1. Add Expense")
-        print("2. View All Expenses")
-        print("3. View Summary")
-        print("4. Delete Expense")
-        print("5. Exit")
+        print("A. Add Expense")
+        print("B. View All Expenses")
+        print("C. View Summary")
+        print("D. Delete Expense")
+        print("E. Exit")
         
-        choice = input("\nEnter your choice (1-5): ").strip()
+        choice = input("\nEnter your choice (A-E): ").strip()
         
-        if choice == '1':
+        if choice == 'A':
             tracker.add_expense()
-        elif choice == '2':
+        elif choice == 'B':
             tracker.view_all_expenses()
-        elif choice == '3':
+        elif choice == 'C':
             tracker.view_summary()
-        elif choice == '4':
+        elif choice == 'D':
             tracker.delete_expense()
-        elif choice == '5':
+        elif choice == 'E':
             print("\nThank you for using Expense Tracker!")
             break
         else:
-            print("Invalid choice! Please enter 1-5")
+            print("Invalid choice! Please enter A-E")
 
 if __name__ == "__main__":
+
     main()
